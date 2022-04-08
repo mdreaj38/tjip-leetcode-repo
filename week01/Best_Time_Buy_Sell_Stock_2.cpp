@@ -9,7 +9,6 @@ int maxProfit(vector<int>& prices) {
 			if(prices[i]<prices[i+1]) break;
 			i++;
 		}
-		
 
 		int buyDay  = i;
 
