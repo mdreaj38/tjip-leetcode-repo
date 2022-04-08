@@ -1,6 +1,5 @@
 int maxProfit(vector<int>& prices) {
 	int sz = prices.size();
-
 	int i = 0;
 	int profit = 0;
 
