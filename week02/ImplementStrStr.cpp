@@ -4,8 +4,9 @@ int MOD = 1e9+7;
 int BASE = 29;
 
 void preProcess(string haystack){
-p	refixHash[0] = haystack[0]-'a';
+	refixHash[0] = haystack[0]-'a';
 	pow[0]=1;
+	
 	for(int i=1; i<haystack.size(); ++i){
 		prefixHash[i] = prefixHash[i-1]*BASE+(haystack[i]-'a');
 		prefixHash[i]%=MOD;
@@ -46,5 +47,3 @@ long long getRangeHash(int L, int R){
 
 	return (hash+MOD)%MOD;
 }
-
-
