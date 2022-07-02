@@ -13,7 +13,6 @@ public:
 		int curMeetingCnt = 0, maxMeetingCnt = 0;
 		for(auto mp: track){
             curMeetingCnt+=mp.second;
-			
 			maxMeetingCnt = max(maxMeetingCnt, curMeetingCnt);		
 		}
 
