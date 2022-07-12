@@ -24,7 +24,7 @@ public:
 
 	
 	// Approach 2
-	// TC: log(m+n)
+	// TC: m+n
 	// MC: O(1)
 	// Using the binary search tree property of this matrix. 
 	bool searchMatrix(vector<vector<int>>& matrix, int target) {
@@ -34,8 +34,7 @@ public:
             if(target == matrix[R][C]){
                 return true;
                 
-            }
-            else if(target < matrix[R][C]){
+            }else if(target < matrix[R][C]){
                 C--;
                 
             }else{
