@@ -39,7 +39,6 @@ public:
                 C--;
                 
             }else{
-                
                 R++;
             }
         }
